@@ -130,7 +130,6 @@ echo hello
         subprocess.check_call(['systemctl', 'disable', 'test_enable.service'])
         self.assertEnabled(False)
 
-    @unittest.skipIf('pkg.systemd.upstream' in os.environ.get('DEB_BUILD_PROFILES', ''), 'sysvinit support disabled upstream')
     def test_unit_sysv_enable(self):
         '''with sysv: enable unit'''
 
@@ -160,7 +159,6 @@ echo hello
         subprocess.check_call(['systemctl', 'enable', 'test_enable.service'])
         self.assertEnabled(True)
 
-    @unittest.skipIf('pkg.systemd.upstream' in os.environ.get('DEB_BUILD_PROFILES', ''), 'sysvinit support disabled upstream')
     def test_unit_sysv_disable(self):
         '''with sysv: disable unit'''
 
@@ -233,7 +231,6 @@ echo hello
         l = '/etc/systemd/system/test_enablea.service'
         self.assertFalse(os.path.islink(l))
 
-    @unittest.skipIf('pkg.systemd.upstream' in os.environ.get('DEB_BUILD_PROFILES', ''), 'sysvinit support disabled upstream')
     def test_unit_sysv_alias_enable(self):
         '''with sysv: enable unit with an alias'''
 
@@ -265,7 +262,6 @@ echo hello
 
         self.assertEnabled(True)
 
-    @unittest.skipIf('pkg.systemd.upstream' in os.environ.get('DEB_BUILD_PROFILES', ''), 'sysvinit support disabled upstream')
     def test_unit_sysv_alias_disable(self):
         '''with sysv: disable unit with an alias'''
 
@@ -292,7 +288,6 @@ echo hello
 
         self.assertEnabled(False)
 
-    @unittest.skipIf('pkg.systemd.upstream' in os.environ.get('DEB_BUILD_PROFILES', ''), 'sysvinit support disabled upstream')
     def test_sysv_enable(self):
         '''only sysv: enable'''
 
@@ -308,7 +303,6 @@ echo hello
         subprocess.check_call(['systemctl', 'enable', 'test_enable'])
         self.assertEnabled(True)
 
-    @unittest.skipIf('pkg.systemd.upstream' in os.environ.get('DEB_BUILD_PROFILES', ''), 'sysvinit support disabled upstream')
     def test_sysv_disable(self):
         '''only sysv: disable'''
 
