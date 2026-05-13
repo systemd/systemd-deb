@@ -6,6 +6,7 @@ Depends: systemd,
   acl,
   locales,
   evemu-tools,
+  procps,
 Restrictions: needs-root, allow-stderr, isolation-container, skippable
 
 Tests: unit-config
@@ -110,6 +111,7 @@ Depends: systemd-sysv,
   python3,
   python3-pefile,
   dhcpcd-base | dhcpcd5,
+  procps,
 Restrictions: needs-root, isolation-container, allow-stderr
 
 Tests: unit-tests
@@ -166,6 +168,7 @@ Depends: systemd-sysv,
   network-manager,
   gdm3 [!s390x !riscv64 !armel !loong64],
   xserver-xorg-video-dummy,
+  procps,
 Restrictions: needs-root, isolation-container, allow-stderr
 
 Tests: build-with-static-libsystemd
