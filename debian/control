@@ -94,6 +94,7 @@ Recommends: default-dbus-system-bus | dbus-system-bus,
             login,
             systemd-timesyncd | time-daemon,
             systemd-cryptsetup,
+            systemd-tpm,
             ${dlopen:Recommends},
 Suggests: systemd-container,
           systemd-homed,
@@ -733,3 +734,17 @@ Replaces: systemd (<< 261-2~),
 Description: Provides metrics reporting utilities and units
  Utilities and units that provide metrics reporting functionality and support
  in systemd, including boot services and generators.
+
+Package: systemd-tpm
+Build-Profiles: <!stage1>
+Architecture: linux-any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         ${dlopen:Depends},
+Recommends: ${dlopen:Recommends},
+Suggests: ${dlopen:Suggests},
+Breaks: systemd (<< 261-2~),
+Replaces: systemd (<< 261-2~),
+Description: Provides tpm2 utilities and units
+ Utilities and units that provide tpm2 functionality and support in systemd,
+ including boot services and generators.
