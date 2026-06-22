@@ -119,7 +119,6 @@ usr/lib/systemd/systemd-fsck
 usr/lib/systemd/systemd-growfs
 usr/lib/systemd/systemd-hibernate-resume
 usr/lib/systemd/systemd-hostnamed
-<!stage1> usr/lib/systemd/systemd-imds*
 usr/lib/systemd/systemd-journald
 usr/lib/systemd/systemd-localed
 usr/lib/systemd/systemd-logind
@@ -170,7 +169,6 @@ usr/lib/systemd/system-generators/systemd-fstab-generator
 usr/lib/systemd/system-generators/systemd-getty-generator
 usr/lib/systemd/system-generators/systemd-gpt-auto-generator
 usr/lib/systemd/system-generators/systemd-hibernate-resume-generator
-<!stage1> usr/lib/systemd/system-generators/systemd-imds-generator
 usr/lib/systemd/system-generators/systemd-run-generator
 usr/lib/systemd/system-generators/systemd-ssh-generator
 usr/lib/systemd/system-generators/systemd-system-update-generator
@@ -339,7 +337,6 @@ usr/lib/systemd/system/systemd-hibernate.service
 usr/lib/systemd/system/systemd-hostnamed.service
 usr/lib/systemd/system/systemd-hostnamed.socket
 usr/lib/systemd/system/systemd-hybrid-sleep.service
-<!stage1> usr/lib/systemd/system/systemd-imds*
 usr/lib/systemd/system/systemd-journal-catalog-update.service
 usr/lib/systemd/system/systemd-journalctl.socket
 usr/lib/systemd/system/systemd-journalctl@.service
@@ -468,7 +465,6 @@ usr/lib/systemd/user/systemd-tmpfiles-setup.service
 usr/lib/systemd/user/timers.target
 usr/lib/systemd/user/xdg-desktop-autostart.target
 usr/lib/sysusers.d/basic.conf
-<!stage1> usr/lib/sysusers.d/systemd-imds.conf
 usr/lib/sysusers.d/systemd-journal.conf
 usr/lib/sysusers.d/systemd-network.conf
 usr/lib/tmpfiles.d/20-systemd-osc-context.conf
@@ -539,7 +535,6 @@ usr/share/locale/
 usr/share/mime/packages/io.systemd.xml
 usr/share/polkit-1/actions/io.systemd.ask-password.policy
 usr/share/polkit-1/actions/io.systemd.credentials.policy
-<!stage1> usr/share/polkit-1/actions/io.systemd.imds.policy
 usr/share/polkit-1/actions/org.freedesktop.hostname1.policy
 usr/share/polkit-1/actions/org.freedesktop.locale1.policy
 usr/share/polkit-1/actions/org.freedesktop.login1.policy

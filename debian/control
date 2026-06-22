@@ -97,6 +97,7 @@ Recommends: default-dbus-system-bus | dbus-system-bus,
             ${dlopen:Recommends},
 Suggests: systemd-container,
           systemd-homed,
+          systemd-imds,
           systemd-userdbd,
           systemd-boot,
           systemd-resolved,
@@ -703,3 +704,17 @@ Conflicts: systemd (<< 256-2~),
 Description: Provides cryptsetup, integritysetup and veritysetup utilities
  Utilities and units that integrated cryptsetup/integritysetup/veritysetup
  support in systemd.
+
+Package: systemd-imds
+Build-Profiles: <!stage1>
+Architecture: linux-any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         ${dlopen:Depends},
+Recommends: ${dlopen:Recommends},
+Suggests: ${dlopen:Suggests},
+Breaks: systemd (<< 261-2~),
+Replaces: systemd (<< 261-2~),
+Description: Provides imds utilities and units
+ Utilities and units that provide imds functionality and support in systemd,
+ including boot services and generators.
