@@ -100,6 +100,7 @@ Suggests: systemd-container,
           systemd-imds,
           systemd-userdbd,
           systemd-boot,
+          systemd-report,
           systemd-resolved,
           systemd-repart,
           polkitd,
@@ -718,3 +719,17 @@ Replaces: systemd (<< 261-2~),
 Description: Provides imds utilities and units
  Utilities and units that provide imds functionality and support in systemd,
  including boot services and generators.
+
+Package: systemd-report
+Build-Profiles: <!stage1>
+Architecture: linux-any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         ${dlopen:Depends},
+Recommends: ${dlopen:Recommends},
+Suggests: ${dlopen:Suggests},
+Breaks: systemd (<< 261-2~),
+Replaces: systemd (<< 261-2~),
+Description: Provides metrics reporting utilities and units
+ Utilities and units that provide metrics reporting functionality and support
+ in systemd, including boot services and generators.

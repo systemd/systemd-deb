@@ -135,7 +135,6 @@ usr/lib/systemd/systemd-quotacheck
 usr/lib/systemd/systemd-random-seed
 usr/lib/systemd/systemd-remount-fs
 usr/lib/systemd/systemd-reply-password
-usr/lib/systemd/systemd-report*
 usr/lib/systemd/systemd-rfkill
 usr/lib/systemd/systemd-shutdown
 usr/lib/systemd/systemd-sleep
@@ -390,7 +389,6 @@ usr/lib/systemd/system/systemd-quotacheck*.service
 usr/lib/systemd/system/systemd-random-seed.service
 usr/lib/systemd/system/systemd-reboot.service
 usr/lib/systemd/system/systemd-remount-fs.service
-usr/lib/systemd/system/systemd-report*
 usr/lib/systemd/system/systemd-rfkill.service
 usr/lib/systemd/system/systemd-rfkill.socket
 usr/lib/systemd/system/systemd-soft-reboot.service
