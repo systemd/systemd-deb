@@ -98,7 +98,7 @@ Depends: systemd-sysv,
   libidn2-dev,
   libpcre2-dev,
   libp11-kit-dev,
-  xserver-xorg-video-dummy,
+  xserver-xorg-video-dummy [!loong64],
   xserver-xorg,
   gdm3 [!s390x !riscv64 !armel !loong64],
   cron,
@@ -167,7 +167,7 @@ Tests: boot-smoke
 Depends: systemd-sysv,
   network-manager,
   gdm3 [!s390x !riscv64 !armel !loong64],
-  xserver-xorg-video-dummy,
+  xserver-xorg-video-dummy [!loong64],
   procps,
 Restrictions: needs-root, isolation-container, allow-stderr
 
