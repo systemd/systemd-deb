@@ -123,6 +123,12 @@ EOF
 if dpkg-vendor --is Ubuntu && [ "${TEST_UPSTREAM:-0}" -ne 1 ]; then
     # Ubuntu uses mkosi from the archive
     sed -i "/^MinimumVersion=.*/d" mkosi/mkosi.conf
+
+    # These never complete on Ubuntu autopkgtest infra. See:
+    # LP: #2157344
+    # https://github.com/systemd/systemd/issues/42606
+    # https://github.com/systemd/systemd/issues/42604
+    export TEST_SKIP="TEST-70-TPM2 TEST-86-MULTI-PROFILE-UKI"
 else
     # Use mkosi from git
     mkosi_tree="${AUTOPKGTEST_TMP}/mkosi"
