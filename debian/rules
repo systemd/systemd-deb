@@ -20,7 +20,8 @@ ifeq ($(DEB_VENDOR),Ubuntu)
     CONFFLAGS_DISTRO = \
 		-Duser-path=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
 		-Ddefault-llmnr=no \
-		-Ddefault-mdns=no
+		-Ddefault-mdns=no \
+		-Dvar-log-mode=0775
 
 else
     DEFAULT_NTP_SERVERS = 0.debian.pool.ntp.org 1.debian.pool.ntp.org 2.debian.pool.ntp.org 3.debian.pool.ntp.org
