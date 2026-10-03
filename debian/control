@@ -152,6 +152,7 @@ Conflicts: sysvinit-core,
            startpar,
            bfh-container (<< 20211009-22~),
            molly-guard (<< 0.8.2~),
+           openrc-init,
 Replaces: sysvinit-core,
 Pre-Depends: systemd
 Depends: ${misc:Depends},
