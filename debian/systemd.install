@@ -318,6 +318,7 @@ usr/lib/systemd/system/systemd-journalctl.socket
 usr/lib/systemd/system/systemd-journalctl@.service
 usr/lib/systemd/system/systemd-journald-audit.socket
 usr/lib/systemd/system/systemd-journald-dev-log.socket
+<pkg.systemd.upstream> usr/lib/systemd/system/systemd-journald-metrics.socket
 usr/lib/systemd/system/systemd-journald.service
 usr/lib/systemd/system/systemd-journald@.service
 usr/lib/systemd/system/systemd-journald.socket
@@ -328,6 +329,7 @@ usr/lib/systemd/system/systemd-journal-flush.service
 usr/lib/systemd/system/systemd-kexec.service
 usr/lib/systemd/system/systemd-localed.service
 usr/lib/systemd/system/systemd-logind.service
+<pkg.systemd.upstream> usr/lib/systemd/system/systemd-logind-metrics.socket
 usr/lib/systemd/system/systemd-logind-varlink.socket
 usr/lib/systemd/system/systemd-loop@.service
 usr/lib/systemd/system/systemd-machine-id-commit.service
