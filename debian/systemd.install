@@ -142,6 +142,7 @@ usr/lib/systemd/systemd-update-done
 usr/lib/systemd/systemd-user-runtime-dir
 usr/lib/systemd/systemd-user-sessions
 usr/lib/systemd/systemd-validatefs
+<pkg.systemd.upstream> usr/lib/systemd/systemd-varlink-monitord
 usr/lib/systemd/systemd-volatile-root
 usr/lib/systemd/systemd-xdg-autostart-condition
 usr/lib/systemd/system/emergency.service
@@ -239,6 +240,7 @@ usr/lib/systemd/system/sockets.target.wants/systemd-logind-varlink.socket
 usr/lib/systemd/system/sockets.target.wants/systemd-mute-console.socket
 usr/lib/systemd/system/sockets.target.wants/systemd-sysext.socket
 usr/lib/systemd/system/sockets.target.wants/systemd-sysinstall.socket
+<pkg.systemd.upstream> usr/lib/systemd/system/sockets.target.wants/systemd-varlink-monitord.socket
 usr/lib/systemd/system/soft-reboot.target
 usr/lib/systemd/system/sound.target
 usr/lib/systemd/system/ssh-access.target
@@ -368,6 +370,8 @@ usr/lib/systemd/system/systemd-tmpfiles-setup.service
 usr/lib/systemd/system/systemd-update-done.service
 usr/lib/systemd/system/systemd-user-sessions.service
 usr/lib/systemd/system/systemd-validatefs@.service
+<pkg.systemd.upstream> usr/lib/systemd/system/systemd-varlink-monitord.socket
+<pkg.systemd.upstream> usr/lib/systemd/system/systemd-varlink-monitord@.service
 usr/lib/systemd/system/systemd-volatile-root.service
 usr/lib/systemd/system/system-systemd\x2dmute\x2dconsole.slice
 usr/lib/systemd/system/system-update-cleanup.service
@@ -487,6 +491,7 @@ usr/share/doc/systemd/
 usr/share/factory/
 usr/share/locale/
 usr/share/mime/packages/io.systemd.xml
+<pkg.systemd.upstream> usr/share/polkit-1/actions/io.systemd.VarlinkMonitor.policy
 usr/share/polkit-1/actions/io.systemd.ask-password.policy
 usr/share/polkit-1/actions/io.systemd.credentials.policy
 usr/share/polkit-1/actions/io.systemd.sysinstall.policy
