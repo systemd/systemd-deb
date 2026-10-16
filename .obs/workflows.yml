@@ -1,17 +1,17 @@
 rebuild:
   steps:
     - trigger_services:
-        project: system:systemd
+        project: system:systemd:stable
         package: systemd
   filters:
     event: push
     branches:
       only:
-        - main
+        - v262-stable
 ci:
   steps:
     - branch_package:
-        source_project: system:systemd
+        source_project: system:systemd:stable
         source_package: systemd
         target_project: system:systemd:ci
     # Also prepare some images, but disabled by default to avoid wasting cpu/disk
@@ -54,6 +54,12 @@ ci:
             package: systemd
             repository: Ubuntu_26.04
             architecture: i586
+          # No packaging support for building SUSE on stable branches
+          - type: build
+            status: disable
+            project: system:systemd:ci
+            package: systemd
+            repository: openSUSE_Tumbleweed
           # Then enable systemd package builds only, so that images stay disabled
           - type: build
             status: enable
@@ -63,4 +69,4 @@ ci:
     event: pull_request
     branches:
       only:
-        - main
+        - v262-stable
