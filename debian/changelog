@@ -1,3 +1,15 @@
+systemd (262.1-1) unstable; urgency=medium
+
+  [ Nick Rosbrook ]
+  * d/control: make systemd-sysv Conflicts: openrc-init (Closes: #1149850)
+
+  [ Luca Boccassi ]
+  * Update upstream source from tag 'upstream/262.1' Update to upstream
+    version '262.1' with Debian dir
+    dea58eef6c33305dd481eefb28afb0e7a51e7281
+
+ -- Luca Boccassi <bluca@debian.org>  Fri, 16 Oct 2026 22:54:19 +0100
+
 systemd (262-1) unstable; urgency=medium
 
   [ Nick Rosbrook ]
