@@ -1,8 +1,13 @@
 #!/usr/bin/dh-exec
 debian/tmp/usr/share/man/man1/systemd-report.1
+<pkg.systemd.upstream> debian/tmp/usr/share/man/man5/report-geoip.conf.5
+<pkg.systemd.upstream> debian/tmp/usr/share/man/man5/report-geoip.conf.d.5
 debian/tmp/usr/share/man/man8/systemd-report-files.8
 debian/tmp/usr/share/man/man8/systemd-report-files.socket.8
 debian/tmp/usr/share/man/man8/systemd-report-files@.service.8
+<pkg.systemd.upstream> debian/tmp/usr/share/man/man8/systemd-report-geoip.8
+<pkg.systemd.upstream> debian/tmp/usr/share/man/man8/systemd-report-geoip.socket.8
+<pkg.systemd.upstream> debian/tmp/usr/share/man/man8/systemd-report-geoip@.service.8
 <pkg.systemd.upstream> debian/tmp/usr/share/man/man8/systemd-report-netstat.8
 <pkg.systemd.upstream> debian/tmp/usr/share/man/man8/systemd-report-netstat.socket.8
 <pkg.systemd.upstream> debian/tmp/usr/share/man/man8/systemd-report-netstat@.service.8
