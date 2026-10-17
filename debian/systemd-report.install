@@ -1,4 +1,4 @@
 #!/usr/bin/dh-exec
-<pkg.systemd.upstream> usr/lib/systemd/report-geoip.conf
+<pkg.systemd.upstream> etc/systemd/report-geoip.conf
 usr/lib/systemd/systemd-report*
 usr/lib/systemd/system/systemd-report*
