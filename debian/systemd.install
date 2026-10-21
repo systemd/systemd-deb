@@ -25,6 +25,7 @@ usr/bin/kernel-install
 usr/bin/localectl
 usr/bin/loginctl
 usr/bin/networkctl
+<pkg.systemd.upstream> usr/bin/ptyctl
 usr/bin/systemctl
 usr/bin/systemd-ac-power
 usr/bin/systemd-analyze
@@ -123,6 +124,7 @@ usr/lib/systemd/systemd-networkd
 usr/lib/systemd/systemd-networkd-wait-online
 usr/lib/systemd/systemd-network-generator
 usr/lib/systemd/systemd-pstore
+<pkg.systemd.upstream> usr/lib/systemd/systemd-ptybrokerd
 usr/lib/systemd/systemd-quotacheck
 usr/lib/systemd/systemd-random-seed
 usr/lib/systemd/systemd-remount-fs
@@ -343,6 +345,8 @@ usr/lib/systemd/system/systemd-networkd*.socket
 usr/lib/systemd/system/systemd-network-generator.service
 usr/lib/systemd/system/systemd-poweroff.service
 usr/lib/systemd/system/systemd-pstore.service
+<pkg.systemd.upstream> usr/lib/systemd/system/systemd-ptybrokerd.service
+<pkg.systemd.upstream> usr/lib/systemd/system/systemd-ptybrokerd.socket
 usr/lib/systemd/system/systemd-quotacheck*.service
 usr/lib/systemd/system/systemd-random-seed.service
 usr/lib/systemd/system/systemd-reboot.service
@@ -411,12 +415,15 @@ usr/lib/systemd/user/smartcard.target
 usr/lib/systemd/user/sockets.target
 usr/lib/systemd/user/sockets.target.wants/systemd-ask-password.socket
 usr/lib/systemd/user/sockets.target.wants/systemd-journalctl.socket
+<pkg.systemd.upstream> usr/lib/systemd/user/sockets.target.wants/systemd-ptybrokerd.socket
 usr/lib/systemd/user/sound.target
 usr/lib/systemd/user/systemd-ask-password.socket
 usr/lib/systemd/user/systemd-ask-password@.service
 usr/lib/systemd/user/systemd-exit.service
 usr/lib/systemd/user/systemd-journalctl.socket
 usr/lib/systemd/user/systemd-journalctl@.service
+<pkg.systemd.upstream> usr/lib/systemd/user/systemd-ptybrokerd.service
+<pkg.systemd.upstream> usr/lib/systemd/user/systemd-ptybrokerd.socket
 usr/lib/systemd/user/systemd-tmpfiles-clean.service
 usr/lib/systemd/user/systemd-tmpfiles-clean.timer
 usr/lib/systemd/user/systemd-tmpfiles-setup.service
@@ -455,6 +462,7 @@ usr/share/bash-completion/completions/kernel-install
 usr/share/bash-completion/completions/localectl
 usr/share/bash-completion/completions/loginctl
 usr/share/bash-completion/completions/networkctl
+<pkg.systemd.upstream> usr/share/bash-completion/completions/ptyctl
 usr/share/bash-completion/completions/run0
 usr/share/bash-completion/completions/systemctl
 usr/share/bash-completion/completions/systemd-analyze
@@ -469,6 +477,7 @@ usr/share/bash-completion/completions/systemd-dissect
 usr/share/bash-completion/completions/systemd-id128
 usr/share/bash-completion/completions/systemd-sysinstall
 usr/share/bash-completion/completions/systemd-path
+<pkg.systemd.upstream> usr/share/bash-completion/completions/systemd-pty-forward
 usr/share/bash-completion/completions/systemd-run
 usr/share/bash-completion/completions/systemd-sysext
 usr/share/bash-completion/completions/systemd-vpick
@@ -491,6 +500,7 @@ usr/share/doc/systemd/
 usr/share/factory/
 usr/share/locale/
 usr/share/mime/packages/io.systemd.xml
+<pkg.systemd.upstream> usr/share/polkit-1/actions/io.systemd.PTYBroker.policy
 <pkg.systemd.upstream> usr/share/polkit-1/actions/io.systemd.VarlinkMonitor.policy
 usr/share/polkit-1/actions/io.systemd.ask-password.policy
 usr/share/polkit-1/actions/io.systemd.credentials.policy
@@ -515,6 +525,7 @@ usr/share/zsh/vendor-completions/_kernel-install
 usr/share/zsh/vendor-completions/_localectl
 usr/share/zsh/vendor-completions/_loginctl
 usr/share/zsh/vendor-completions/_networkctl
+<pkg.systemd.upstream> usr/share/zsh/vendor-completions/_ptyctl
 usr/share/zsh/vendor-completions/_run0
 usr/share/zsh/vendor-completions/_sd_bus_address
 usr/share/zsh/vendor-completions/_sd_hosts_or_user_at_host
@@ -528,6 +539,7 @@ usr/share/zsh/vendor-completions/_systemd-id128
 usr/share/zsh/vendor-completions/_systemd-inhibit
 usr/share/zsh/vendor-completions/_systemd-sysinstall
 usr/share/zsh/vendor-completions/_systemd-path
+<pkg.systemd.upstream> usr/share/zsh/vendor-completions/_systemd-pty-forward
 usr/share/zsh/vendor-completions/_systemd-run
 usr/share/zsh/vendor-completions/_systemd-tmpfiles
 usr/share/zsh/vendor-completions/_timedatectl
