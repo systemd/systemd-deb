@@ -129,6 +129,10 @@ if dpkg-vendor --is Ubuntu && [ "${TEST_UPSTREAM:-0}" -ne 1 ]; then
     # https://github.com/systemd/systemd/issues/42606
     # https://github.com/systemd/systemd/issues/42604
     export TEST_SKIP="TEST-70-TPM2 TEST-86-MULTI-PROFILE-UKI"
+
+    # mkosi 27 does not know about nura
+    grep -rn nura mkosi/ | awk -F':' '{print $1}' | xargs rm -f
+    find mkosi/ -name nura -type d | xargs rm -rf
 else
     # Use mkosi from git
     mkosi_tree="${AUTOPKGTEST_TMP}/mkosi"
