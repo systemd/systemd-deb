@@ -188,10 +188,10 @@ class NspawnTest(unittest.TestCase):
         kls.c_busybox = kls.td_c_busybox.name
         for d in ['etc/init.d', 'bin', 'sbin']:
             os.makedirs(os.path.join(kls.c_busybox, d))
-        shutil.copy('/bin/busybox', os.path.join(kls.c_busybox, 'bin'))
+        shutil.copy('/bin/busybox-static', os.path.join(kls.c_busybox, 'bin'))
         shutil.copy('/etc/os-release', os.path.join(kls.c_busybox, 'etc'))
-        os.symlink('busybox', os.path.join(kls.c_busybox, 'bin', 'sh'))
-        os.symlink('../bin/busybox', os.path.join(kls.c_busybox, 'sbin/init'))
+        os.symlink('busybox-static', os.path.join(kls.c_busybox, 'bin', 'sh'))
+        os.symlink('../bin/busybox-static', os.path.join(kls.c_busybox, 'sbin/init'))
         with open(os.path.join(kls.c_busybox, 'etc/init.d/rcS'), 'w') as f:
             f.write('''#!/bin/sh
 echo fake container started
