@@ -130,13 +130,6 @@ if dpkg-vendor --is Ubuntu && [ "${TEST_UPSTREAM:-0}" -ne 1 ]; then
     # Ubuntu uses mkosi from the archive
     sed -i "/^MinimumVersion=.*/d" mkosi/mkosi.conf
 
-    # These options do not exist in v26, which is currently the latest mkosi release.
-    for image in minimal-0 minimal-base minimal-1; do
-        f="mkosi/mkosi.images/$image/mkosi.conf"
-        sed -i "/^Incremental=relaxed/d" "$f"
-        sed -i "/^CacheOnly=metadata/d" "$f"
-    done
-
     mkosi_version="$(dpkg --status mkosi | awk '/^Version:/{print $NF}')"
 else
     # Use mkosi from git
