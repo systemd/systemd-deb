@@ -97,13 +97,7 @@ if [ -d "${AUTOPKGTEST_TMP}/../binaries" ]; then
     done
 fi
 
-# Moved in v258
-mkosi_local_conf="mkosi.local.conf"
-if [ -d mkosi ]; then
-    mkosi_local_conf="mkosi/mkosi.local.conf"
-fi
-
-tee "${mkosi_local_conf}" <<EOF
+tee "mkosi/mkosi.local.conf" <<EOF
 [Output]
 Format=disk
 
