@@ -19,8 +19,11 @@ ifeq ($(DEB_VENDOR),Ubuntu)
     SUPPORT_URL = http://www.ubuntu.com/support
     CONFFLAGS_DISTRO = \
 		-Duser-path=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
-		-Ddefault-llmnr=no \
+		-Ddefault-llmnr=no
+ifeq (, $(filter pkg.systemd.upstream, $(DEB_BUILD_PROFILES)))
+    CONFFLAGS_DISTRO += \
 		-Ddefault-mdns=no
+endif
 
 else
     DEFAULT_NTP_SERVERS = 0.debian.pool.ntp.org 1.debian.pool.ntp.org 2.debian.pool.ntp.org 3.debian.pool.ntp.org
