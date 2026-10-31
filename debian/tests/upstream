@@ -74,7 +74,7 @@ mount "$loop" "$workdir/btrfs" --options compress=zstd:1,user_subvol_rm_allowed,
 # so unset these variables to hide it
 unset SUDO_USER SUDO_UID SUDO_GID
 
-apt_dir="/etc/apt"
+apt_dir=""
 local_binaries=""
 if [ -d "${AUTOPKGTEST_TMP}/../binaries" ]; then
     # If locally built binaries are being used, prepare /etc/apt so that
@@ -104,7 +104,7 @@ Format=disk
 [Build]
 WorkspaceDirectory=$workdir
 PackageCacheDirectory=$workdir/cache
-SandboxTrees=${apt_dir}:/etc/apt/
+${apt_dir:+"SandboxTrees=${apt_dir}:/etc/apt/"}
 ToolsTree=
 Environment=NO_BUILD=1 NO_SYNC=1 ARTIFACT_DIRECTORY="$AUTOPKGTEST_ARTIFACTS" TEST_SAVE_JOURNAL=fail TEST_SHOW_JOURNAL=warning
 Incremental=no
