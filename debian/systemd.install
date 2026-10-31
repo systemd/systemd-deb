@@ -269,6 +269,7 @@ usr/lib/systemd/system/sysinit.target.wants/systemd-journal-catalog-update.servi
 usr/lib/systemd/system/sysinit.target.wants/systemd-journald.service
 usr/lib/systemd/system/sysinit.target.wants/systemd-journal-flush.service
 usr/lib/systemd/system/sysinit.target.wants/systemd-machine-id-commit.service
+<pkg.systemd.upstream> usr/lib/systemd/system/sysinit.target.wants/systemd-machine-tags.service
 usr/lib/systemd/system/sysinit.target.wants/systemd-random-seed.service
 usr/lib/systemd/system/sysinit.target.wants/systemd-sysctl.service
 usr/lib/systemd/system/sysinit.target.wants/systemd-sysusers.service
@@ -338,6 +339,7 @@ usr/lib/systemd/system/systemd-logind-varlink.socket
 usr/lib/systemd/system/systemd-loop@.service
 usr/lib/systemd/system/systemd-machine-id-commit.service
 usr/lib/systemd/system/systemd-machine-tag@.service
+<pkg.systemd.upstream> usr/lib/systemd/system/systemd-machine-tags.service
 usr/lib/systemd/system/systemd-mute-console.socket
 usr/lib/systemd/system/systemd-mute-console@.service
 usr/lib/systemd/system/systemd-networkd*.service

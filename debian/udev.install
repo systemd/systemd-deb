@@ -48,6 +48,7 @@ usr/lib/udev/rules.d/60-persistent-media-controller.rules
 usr/lib/udev/rules.d/60-persistent-storage-mtd.rules
 usr/lib/udev/rules.d/60-persistent-storage.rules
 usr/lib/udev/rules.d/60-persistent-storage-tape.rules
+<pkg.systemd.upstream> usr/lib/udev/rules.d/60-persistent-usb.rules
 usr/lib/udev/rules.d/60-persistent-v4l.rules
 usr/lib/udev/rules.d/60-sensor.rules
 usr/lib/udev/rules.d/60-serial.rules

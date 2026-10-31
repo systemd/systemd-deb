@@ -58,6 +58,7 @@ debian/tmp/usr/share/man/man5/logind.conf.5
 debian/tmp/usr/share/man/man5/logind.conf.d.5
 debian/tmp/usr/share/man/man5/machine-id.5
 debian/tmp/usr/share/man/man5/machine-info.5
+<pkg.systemd.upstream> debian/tmp/usr/share/man/man5/machine-tags.d.5
 debian/tmp/usr/share/man/man5/networkd.conf.5
 debian/tmp/usr/share/man/man5/networkd.conf.d.5
 debian/tmp/usr/share/man/man5/org.freedesktop.hostname1.5
@@ -189,6 +190,7 @@ debian/tmp/usr/share/man/man8/systemd-logind.service.8
 debian/tmp/usr/share/man/man8/systemd-loop@.service.8
 debian/tmp/usr/share/man/man8/systemd-machine-id-commit.service.8
 debian/tmp/usr/share/man/man8/systemd-machine-tag@.service.8
+<pkg.systemd.upstream> debian/tmp/usr/share/man/man8/systemd-machine-tags.service.8
 debian/tmp/usr/share/man/man8/systemd-makefs.8
 debian/tmp/usr/share/man/man8/systemd-makefs@.service.8
 debian/tmp/usr/share/man/man8/systemd-mkswap@.service.8
