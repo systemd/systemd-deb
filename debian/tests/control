@@ -175,7 +175,7 @@ Depends: systemd-sysv,
   procps,
 Restrictions: needs-root, isolation-container, allow-stderr
 
-Tests: build-with-static-libsystemd
+Tests: build-static
 Depends: systemd,
   pkgconf,
   build-essential,
