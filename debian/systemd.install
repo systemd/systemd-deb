@@ -477,6 +477,7 @@ usr/share/bash-completion/completions/systemd-delta
 usr/share/bash-completion/completions/systemd-detect-virt
 usr/share/bash-completion/completions/systemd-dissect
 usr/share/bash-completion/completions/systemd-id128
+<pkg.systemd.upstream> usr/share/bash-completion/completions/systemd-notify
 usr/share/bash-completion/completions/systemd-sysinstall
 usr/share/bash-completion/completions/systemd-path
 <pkg.systemd.upstream> usr/share/bash-completion/completions/systemd-pty-forward
