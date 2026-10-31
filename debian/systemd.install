@@ -141,6 +141,7 @@ usr/lib/systemd/systemd-sysctl
 usr/lib/systemd/systemd-sysroot-fstab-check
 usr/lib/systemd/systemd-timedated
 usr/lib/systemd/systemd-update-done
+<pkg.systemd.upstream> usr/lib/systemd/systemd-update-helper
 usr/lib/systemd/systemd-user-runtime-dir
 usr/lib/systemd/systemd-user-sessions
 usr/lib/systemd/systemd-validatefs
