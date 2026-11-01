@@ -477,7 +477,6 @@ usr/share/bash-completion/completions/systemd-confext
 usr/share/bash-completion/completions/systemd-creds
 usr/share/bash-completion/completions/systemd-delta
 usr/share/bash-completion/completions/systemd-detect-virt
-usr/share/bash-completion/completions/systemd-dissect
 usr/share/bash-completion/completions/systemd-id128
 <pkg.systemd.upstream> usr/share/bash-completion/completions/systemd-manifest
 <pkg.systemd.upstream> usr/share/bash-completion/completions/systemd-notify

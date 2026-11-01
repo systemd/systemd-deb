@@ -105,6 +105,7 @@ usr/share/zsh/vendor-completions/_storagectl
 usr/share/bash-completion/completions/machinectl
 usr/share/bash-completion/completions/portablectl
 usr/share/bash-completion/completions/storagectl
+usr/share/bash-completion/completions/systemd-dissect
 usr/share/bash-completion/completions/systemd-nspawn
 usr/share/bash-completion/completions/systemd-sysupdate
 <pkg.systemd.upstream> usr/share/bash-completion/completions/updatectl
