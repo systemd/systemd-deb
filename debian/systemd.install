@@ -42,6 +42,7 @@ usr/bin/systemd-firstboot
 usr/bin/systemd-id128
 usr/bin/systemd-inhibit
 usr/bin/systemd-machine-id-setup
+<pkg.systemd.upstream> usr/bin/systemd-manifest
 usr/bin/systemd-mount
 usr/bin/systemd-mute-console
 usr/bin/systemd-notify
@@ -478,6 +479,7 @@ usr/share/bash-completion/completions/systemd-delta
 usr/share/bash-completion/completions/systemd-detect-virt
 usr/share/bash-completion/completions/systemd-dissect
 usr/share/bash-completion/completions/systemd-id128
+<pkg.systemd.upstream> usr/share/bash-completion/completions/systemd-manifest
 <pkg.systemd.upstream> usr/share/bash-completion/completions/systemd-notify
 usr/share/bash-completion/completions/systemd-sysinstall
 usr/share/bash-completion/completions/systemd-path
@@ -541,6 +543,7 @@ usr/share/zsh/vendor-completions/_systemd-analyze
 usr/share/zsh/vendor-completions/_systemd-delta
 usr/share/zsh/vendor-completions/_systemd-id128
 usr/share/zsh/vendor-completions/_systemd-inhibit
+<pkg.systemd.upstream> usr/share/zsh/vendor-completions/_systemd-manifest
 usr/share/zsh/vendor-completions/_systemd-sysinstall
 usr/share/zsh/vendor-completions/_systemd-path
 <pkg.systemd.upstream> usr/share/zsh/vendor-completions/_systemd-pty-forward

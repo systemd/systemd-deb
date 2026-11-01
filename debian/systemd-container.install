@@ -94,6 +94,7 @@ usr/share/polkit-1/actions/org.freedesktop.import1.policy
 usr/share/polkit-1/actions/org.freedesktop.machine1.policy
 usr/share/polkit-1/actions/org.freedesktop.portable1.policy
 <pkg.systemd.upstream> usr/share/polkit-1/actions/org.freedesktop.sysupdate1.policy
+<pkg.systemd.upstream> usr/share/zsh/vendor-completions/_systemd-dissect
 usr/share/zsh/vendor-completions/_systemd-nspawn
 usr/share/zsh/vendor-completions/_systemd-sysupdate
 <pkg.systemd.upstream> usr/share/zsh/vendor-completions/_systemd-vmspawn
