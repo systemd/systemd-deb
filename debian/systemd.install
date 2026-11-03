@@ -548,6 +548,7 @@ usr/share/zsh/vendor-completions/_systemd-path
 <pkg.systemd.upstream> usr/share/zsh/vendor-completions/_systemd-pty-forward
 usr/share/zsh/vendor-completions/_systemd-run
 usr/share/zsh/vendor-completions/_systemd-tmpfiles
+<pkg.systemd.upstream> usr/share/zsh/vendor-completions/_systemd-vpick
 usr/share/zsh/vendor-completions/_timedatectl
 usr/share/zsh/vendor-completions/_userdbctl
 usr/share/zsh/vendor-completions/_varlinkctl
