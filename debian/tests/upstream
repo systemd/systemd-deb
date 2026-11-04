@@ -76,11 +76,11 @@ unset SUDO_USER SUDO_UID SUDO_GID
 
 apt_dir=""
 local_binaries=""
-if [ -d "${AUTOPKGTEST_TMP}/../binaries" ]; then
+if [ -d "${AUTOPKGTEST_ARTIFACTS}/../binaries" ]; then
     # If locally built binaries are being used, prepare /etc/apt so that
     # it will not conflict with settings implied by PackageDirectories=
     # used below.
-    local_binaries="$(realpath "${AUTOPKGTEST_TMP}/../binaries")"
+    local_binaries="$(realpath "${AUTOPKGTEST_ARTIFACTS}/../binaries")"
     apt_dir="$(mktemp -d)/apt"
     cp -r /etc/apt "$apt_dir"
 
