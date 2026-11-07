@@ -236,6 +236,7 @@ usr/lib/systemd/system/sockets.target
 usr/lib/systemd/system/sockets.target.wants/systemd-ask-password.socket
 usr/lib/systemd/system/sockets.target.wants/systemd-creds.socket
 usr/lib/systemd/system/sockets.target.wants/systemd-factory-reset.socket
+<pkg.systemd.upstream> usr/lib/systemd/system/sockets.target.wants/systemd-firstboot.socket
 usr/lib/systemd/system/sockets.target.wants/systemd-hostnamed.socket
 usr/lib/systemd/system/sockets.target.wants/systemd-journalctl.socket
 usr/lib/systemd/system/sockets.target.wants/systemd-journald-dev-log.socket
@@ -307,6 +308,8 @@ usr/lib/systemd/system/systemd-factory-reset-request.service
 usr/lib/systemd/system/systemd-factory-reset.socket
 usr/lib/systemd/system/systemd-factory-reset@.service
 usr/lib/systemd/system/systemd-firstboot.service
+<pkg.systemd.upstream> usr/lib/systemd/system/systemd-firstboot.socket
+<pkg.systemd.upstream> usr/lib/systemd/system/systemd-firstboot@.service
 usr/lib/systemd/system/systemd-fsck-root.service
 usr/lib/systemd/system/systemd-fsck@.service
 usr/lib/systemd/system/systemd-growfs-root.service

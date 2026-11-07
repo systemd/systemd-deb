@@ -21,6 +21,8 @@ debian/tmp/usr/share/man/man1/systemd-detect-virt.1
 debian/tmp/usr/share/man/man1/systemd-escape.1
 debian/tmp/usr/share/man/man1/systemd-firstboot.1
 debian/tmp/usr/share/man/man1/systemd-firstboot.service.1
+<pkg.systemd.upstream> debian/tmp/usr/share/man/man1/systemd-firstboot.socket.1
+<pkg.systemd.upstream> debian/tmp/usr/share/man/man1/systemd-firstboot@.service.1
 debian/tmp/usr/share/man/man1/systemd-id128.1
 debian/tmp/usr/share/man/man1/systemd-inhibit.1
 debian/tmp/usr/share/man/man1/systemd-machine-id-setup.1
