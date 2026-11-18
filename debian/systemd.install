@@ -405,6 +405,8 @@ usr/lib/systemd/system/user@.service.d/10-login-barrier.conf
 usr/lib/systemd/system/user.slice
 usr/lib/systemd/system/user-.slice.d/10-defaults.conf
 usr/lib/systemd/user/app.slice
+<pkg.systemd.upstream> usr/lib/systemd/user/app-.scope.d/
+<pkg.systemd.upstream> usr/lib/systemd/user/app-.service.d/
 usr/lib/systemd/user/background.slice
 usr/lib/systemd/user/basic.target
 usr/lib/systemd/user/bluetooth.target
